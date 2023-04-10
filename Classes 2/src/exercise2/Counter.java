@@ -1,7 +1,7 @@
 package exercise2;
 import java.util.*;
 
-public class Functions {
+public class Counter {
 }
 
 /*Crea una clase llamada Contador que contenga un único atributo entero llamado cont.
