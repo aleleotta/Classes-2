@@ -1,7 +1,12 @@
 package exercise4;
 import java.util.*;
 
-public class Functions {
+public class Disc {
+	private String codigo = "FREE";
+	private String author = "";
+	private String title = "";
+	private String genre = "";
+	private int duration = 0;
 }
 
 /*Crea la clase Disco con los siguientes atributos: codigo, autor, titulo, genero de tipo

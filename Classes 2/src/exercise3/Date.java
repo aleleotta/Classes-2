@@ -1,7 +1,69 @@
 package exercise3;
 import java.util.*;
 
-public class Functions {
+public class Date {
+	
+	private int day = 0;
+	private int month = 0;
+	private int year = 0;
+	
+	public Date() {}
+	
+	public Date(int day, int month, int year) {
+		this.day = day;
+		this.month = month;
+		this.year = year;
+	}
+	
+	private boolean leapYear() {
+		boolean leap = false;
+		if(this.year % 4 == 0) {
+			leap = true;
+			if(this.year % 100 == 0) {
+				leap = false;
+			}
+		}
+		return leap;
+	}
+	
+	public boolean correctDate() {
+		boolean correct = false;
+		if(leapYear() == true) {
+			correct = true; 
+		}
+		return correct;
+	}
+	
+	public int getDay() {
+		return day;
+	}
+
+	public void setDay(int day) {
+		if(day >= 0) {
+			this.day = day;
+		}
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public void setMonth(int month) {
+		if(month >= 0) {
+			this.month = month;
+		}
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		if(year >= 0) {
+			this.year = year;
+		}
+	}
+	
 }
 
 /*Crear una clase Fecha en Java. La clase tendrá tres atributos privados: día, mes y año
