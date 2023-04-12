@@ -7,6 +7,71 @@ public class Disc {
 	private String title = "";
 	private String genre = "";
 	private int duration = 0;
+	
+	public Disc() {}
+
+	public Disc(String codigo, String author, String title, String genre, int duration) {
+		this.codigo = codigo;
+		this.author = author;
+		this.title = title;
+		this.genre = genre;
+		this.duration = duration;
+	}
+	
+	public Disc(Disc object) {
+		Disc copy = object;
+	}
+	
+	public void toString(Disc obj) {
+		System.out.println("Disc information\n"
+				+ "===============================\n"
+				+ "Code: " + obj.codigo 
+				+ "\nAuthor: " + obj.author
+				+ "\nTitle: " + obj.title
+				+ "\nGenre: " + obj.genre
+				+ "Duration: " + obj.duration);
+	}
+	
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public int getDuration() {
+		return duration;
+	}
+
+	public void setDuration(int duration) {
+		this.duration = duration;
+	}
+	
 }
 
 /*Crea la clase Disco con los siguientes atributos: codigo, autor, titulo, genero de tipo

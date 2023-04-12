@@ -3,7 +3,15 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
+		Disc list[] = new Disc[10];
 		Scanner sc = new Scanner(System.in);
+		Disc default0 = new Disc();
+		for(int i = 0; i < list.length; i++) {
+			list[i] = default0;
+		}
+		for(Disc print: list) {
+			System.out.println(print);
+		}
 		sc.close();
 	}
 }
