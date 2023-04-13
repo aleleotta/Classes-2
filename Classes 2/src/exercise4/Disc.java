@@ -10,8 +10,8 @@ public class Disc {
 	
 	public Disc() {}
 
-	public Disc(String codigo, String author, String title, String genre, int duration) {
-		this.code = codigo;
+	public Disc(String code, String author, String title, String genre, int duration) {
+		this.code = code;
 		this.author = author;
 		this.title = title;
 		this.genre = genre;
@@ -29,7 +29,8 @@ public class Disc {
 				+ "\nAuthor: " + obj.author
 				+ "\nTitle: " + obj.title
 				+ "\nGenre: " + obj.genre
-				+ "Duration: " + obj.duration);
+				+ "\nDuration: " + obj.duration
+				+ "\n");
 	}
 	
 	public String getCode() {
