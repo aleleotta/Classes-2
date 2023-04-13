@@ -2,16 +2,16 @@ package exercise4;
 import java.util.*;
 
 public class Disc {
-	private String codigo = "FREE";
-	private String author = "";
-	private String title = "";
-	private String genre = "";
+	private String code = "FREE";
+	private String author = "EMPTY";
+	private String title = "EMPTY";
+	private String genre = "EMPTY";
 	private int duration = 0;
 	
 	public Disc() {}
 
 	public Disc(String codigo, String author, String title, String genre, int duration) {
-		this.codigo = codigo;
+		this.code = codigo;
 		this.author = author;
 		this.title = title;
 		this.genre = genre;
@@ -25,19 +25,19 @@ public class Disc {
 	public void toString(Disc obj) {
 		System.out.println("Disc information\n"
 				+ "===============================\n"
-				+ "Code: " + obj.codigo 
+				+ "Code: " + obj.code 
 				+ "\nAuthor: " + obj.author
 				+ "\nTitle: " + obj.title
 				+ "\nGenre: " + obj.genre
 				+ "Duration: " + obj.duration);
 	}
 	
-	public String getCodigo() {
-		return codigo;
+	public String getCode() {
+		return code;
 	}
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	public String getAuthor() {
