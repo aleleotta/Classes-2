@@ -118,8 +118,8 @@ public class Main {
 			case 4: //DELETE
 				String codeForDelete = "";
 				codeForDelete = sc.next();
+				int counter1 = 0;
 				for(Disc read: list) {
-					int counter1 = 0;
 					if(read.getCode().equals(codeForDelete)) {
 						discs = new Disc();
 						list[counter1] = discs;
